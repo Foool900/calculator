@@ -42,6 +42,9 @@ int main(){
 			result=a;
 			while(a!=0){
 				scanf("%lf",&a);
+				if(a==0){
+					break;
+				}
 				result-=a;
 			}
 			que=1;
@@ -283,11 +286,11 @@ int main(){
 	        arr=(int**)malloc(i1*sizeof(int*));
 	        crr=(int**)malloc(j1*sizeof(int*));
 	        
-			for (i = 0; i < j1; i++) {
+			for (i = 0; i < i1; i++) {
 			    arr[i] = (int *)malloc(j1 * sizeof(int));
 			}
 
-	         for (i = 0; i < i1; i++) {
+	         for (i = 0; i < j1; i++) {
 			    crr[i] = (int *)malloc(i1 * sizeof(int));
 			}
 	        
